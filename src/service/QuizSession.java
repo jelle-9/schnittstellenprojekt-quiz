@@ -12,6 +12,13 @@ public class QuizSession {
     private List<QuizObserver> observers = new ArrayList<>();
     private List<Question> questions = new ArrayList<>();
     private int score = 0;
+    private String playerName;
+    private HighscoreManager highscoreManager;
+
+    public QuizSession(String playerName, HighscoreManager highscoreManager) {
+        this.playerName = playerName;
+        this.highscoreManager = highscoreManager;
+    }
 
     public void addObserver(QuizObserver observer){
         observers.add(observer);
@@ -51,5 +58,7 @@ public class QuizSession {
             }
         }
         notifyObservers("Quiz beendet! Endpunktestand: "+ score);
+        highscoreManager.addHighscore(playerName, score);
+        highscoreManager.printHighscores();
     }
 }

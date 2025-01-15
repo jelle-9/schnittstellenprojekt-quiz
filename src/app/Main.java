@@ -2,6 +2,7 @@ package app;
 
 import model.QuestionFactory;
 import observer.*;
+import service.HighscoreManager;
 import service.QuizSession;
 
 import java.util.List;
@@ -9,9 +10,14 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
 
+        HighscoreManager highscoreManager = new HighscoreManager();
+        highscoreManager.loadHighscores();
+
+        String playerName = "Max Mustermann";
+
         QuizNotifier notifier = new QuizNotifier();
 
-        QuizSession session = new QuizSession();
+        QuizSession session = new QuizSession(playerName, highscoreManager);
         session.addObserver(notifier);
 
         //Test-Fragen
@@ -31,5 +37,6 @@ public class Main {
         ));
 
         session.start();
+        highscoreManager.saveHighscores();
     }
 }
