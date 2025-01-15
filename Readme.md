@@ -1,22 +1,21 @@
-# schnittstellenprojekt-quiz v0.1
+# schnittstellenprojekt-quiz v0.3.2
 Ein kleines Quiz Projekt in Java
 
 ## Features
 * Quizfragen hinzufügen
   * Multiple-Choice
+  * T/F
 * User-Input (konsole)
 * Punktestand (konsole)
+* High-Score System
+  * Persistent in einer Datei
+  * Mit Usernamen
 
 
 ## Todo
 * Quizfragen hinzufügen (dynamisch)
-    * T/F
     * Fill-in-the-blank
     * Offen
-* User-Input (konsole)
-    * Fehler abfangen
-    * checken
 * JavaFX Oberfläche
-* High-Score System
 * Historie
 * Timer
