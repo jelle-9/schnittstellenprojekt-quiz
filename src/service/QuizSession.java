@@ -2,6 +2,7 @@ package service;
 
 import model.MultipleChoiceQuestion;
 import model.Question;
+import model.TrueFalseQuestion;
 import observer.QuizObserver;
 
 import java.util.ArrayList;
@@ -35,6 +36,8 @@ public class QuizSession {
                 for(int i = 0; i < options.length; i++){
                     System.out.println((i+1) + ". " + options[i]);
                 }
+            }else if(question instanceof TrueFalseQuestion) {
+                System.out.println("Antwortmglichkeiten: wahr (true) oder falsch (false)");
             }
 
             System.out.println("Deine Antwort: ");

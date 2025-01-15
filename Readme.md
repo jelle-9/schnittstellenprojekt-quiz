@@ -1,15 +1,22 @@
-# schnittstellenprojekt-quiz
-Ein kleines Quiz Projekt in Java mit Multiple Choice und Wahr/Falsch Fragen
+# schnittstellenprojekt-quiz v0.1
+Ein kleines Quiz Projekt in Java
 
-# Todo
+## Features
+* Quizfragen hinzufügen
+  * Multiple-Choice
+* User-Input (konsole)
+* Punktestand (konsole)
+
+
+## Todo
 * Quizfragen hinzufügen (dynamisch)
-    * Multiple-Choice
     * T/F
+    * Fill-in-the-blank
     * Offen
 * User-Input (konsole)
-    * Fehlerabfangen
+    * Fehler abfangen
     * checken
-* Punktestand (konsole)
 * JavaFX Oberfläche
+* High-Score System
 * Historie
 * Timer

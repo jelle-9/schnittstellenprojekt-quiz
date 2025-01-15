@@ -16,6 +16,11 @@ public class MultipleChoiceQuestion extends Question {
         return answer.equals(correctAnswer);
     }
 
+    @Override
+    public String getQuestionType() {
+        return "multiple_choice";
+    }
+
     public String[] getOptions() {
         return options;
     }

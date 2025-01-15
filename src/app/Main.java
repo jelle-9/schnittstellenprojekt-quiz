@@ -4,6 +4,8 @@ import model.QuestionFactory;
 import observer.*;
 import service.QuizSession;
 
+import java.util.List;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -13,15 +15,19 @@ public class Main {
         session.addObserver(notifier);
 
         //Test-Fragen
-        session.addQuestion(QuestionFactory.createMultipleChoiceQuestion(
+        //Multiple-Choice
+        session.addQuestion(QuestionFactory.createQuestion(
+                "multiple_choice",
                 "Was ist die Standard-Datenstruktur, die in Java verwendet wird, um eine geordnete Sammlung von Elementen zu speichern?",
-                new String[]{"List", "Set", "Queue", "Map"},
+                List.of("List", "Set", "Queue", "Map"),
                 "1"
         ));
-        session.addQuestion(QuestionFactory.createMultipleChoiceQuestion(
-                "Welches SQL-Statement wird verwendet, um Daten in eine Tabelle einzufügen?",
-                new String[]{"SELECT", "INSERT", "DELETE", "UPDATE"},
-                "2"
+
+        //True-False
+        session.addQuestion(QuestionFactory.createQuestion(
+                "true_false",
+                "Java ist eine Programmiersprache.",
+                true
         ));
 
         session.start();

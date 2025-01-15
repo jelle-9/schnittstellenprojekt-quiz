@@ -16,4 +16,6 @@ public abstract class Question {
     public String getQuestionText() {
         return questionText;
     }
+
+    public abstract String getQuestionType();
 }
