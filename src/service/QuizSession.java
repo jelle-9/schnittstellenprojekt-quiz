@@ -18,6 +18,7 @@ public class QuizSession {
     public QuizSession(String playerName, HighscoreManager highscoreManager) {
         this.playerName = playerName;
         this.highscoreManager = highscoreManager;
+        this.highscoreManager.loadHighscores();
     }
 
     public void addObserver(QuizObserver observer){
@@ -35,6 +36,13 @@ public class QuizSession {
     }
 
     public void start(){
+
+        // playerName fehlt - Abbruch
+        if (playerName == null || playerName.isEmpty()) {
+            System.out.println("Spielername ist nicht gesetzt! Bitte setzen Sie den Spielernamen vor dem Start.");
+            return;
+        }
+
         notifyObservers("Das Quiz wurde gestartet!");
         for(Question question : questions){
             System.out.println("Frage: " + question.getQuestionText());
@@ -44,7 +52,7 @@ public class QuizSession {
                     System.out.println((i+1) + ". " + options[i]);
                 }
             }else if(question instanceof TrueFalseQuestion) {
-                System.out.println("Antwortmglichkeiten: wahr (true) oder falsch (false)");
+                System.out.println("Antwortmoeglichkeiten: (w)ahr/(t)rue/1 -oder- (f)alsch/false/0");
             }
 
             System.out.println("Deine Antwort: ");

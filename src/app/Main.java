@@ -11,9 +11,9 @@ public class Main {
     public static void main(String[] args) {
 
         HighscoreManager highscoreManager = new HighscoreManager();
-        highscoreManager.loadHighscores();
 
-        String playerName = "Max Mustermann";
+        System.out.println("Bitte geben Sie Ihren Namen ein:");
+        String playerName = new java.util.Scanner(System.in).nextLine();
 
         QuizNotifier notifier = new QuizNotifier();
 

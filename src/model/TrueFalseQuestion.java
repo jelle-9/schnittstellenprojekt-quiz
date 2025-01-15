@@ -11,6 +11,17 @@ public class TrueFalseQuestion extends Question {
     @Override
     public boolean checkAnswer(String answer) {
         if (answer == null) return false;
+        answer = answer.trim().toLowerCase();
+
+        if (answer.equals("true") || answer.equals("t") || answer.equals("whar") || answer.equals("1")){
+            return correctAnswer;
+        }
+
+        if (answer.equals("false") || answer.equals("f") || answer.equals("falsch") || answer.equals("0")){
+            return !correctAnswer;
+        }
+
+
         return Boolean.parseBoolean(answer.toLowerCase()) == correctAnswer;
     }
 
