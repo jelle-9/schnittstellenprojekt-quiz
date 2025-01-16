@@ -16,10 +16,10 @@ public class QuestionLoader {
 
     public static List<Question> loadQuestions(String fileName) throws IOException {
         Gson gson = new Gson();
-        try (FileReader reader = new FileReader(fileName)){
+        try (FileReader reader = new FileReader(fileName)) {
 
-            //umwandeln JSON zu QuestionData Liste
-            Type questionDataType = new TypeToken<List<QuestionData>>(){}.getType();
+            // Umwandeln des JSONs zu einer Liste von QuestionData
+            Type questionDataType = new TypeToken<List<QuestionData>>() {}.getType();
             List<QuestionData> questionDataList = gson.fromJson(reader, questionDataType);
 
             List<Question> questions = new ArrayList<>();
@@ -31,17 +31,22 @@ public class QuestionLoader {
                 // Konvertiere correctAnswer basierend auf dem Fragetyp
                 if (type.equalsIgnoreCase("true_false")) {
                     correctAnswer = Boolean.parseBoolean(data.getCorrectAnswer().trim().toLowerCase());
+                    // Füge die Frage hinzu
                     questions.add(QuestionFactory.createQuestion(
                             type,
                             question,
                             correctAnswer // Direkt den Boolean übergeben
                     ));
                 } else if (type.equalsIgnoreCase("multiple_choice")) {
+                    String[] options = data.getOptions() != null ? data.getOptions().toArray(new String[0]) : new String[0];
+                    correctAnswer = data.getCorrectAnswer(); // Die richtige Antwort als String
+
+                    // MultipleChoice Frage erstellen
                     questions.add(QuestionFactory.createQuestion(
                             type,
                             question,
-                            data.getOptions() != null ? data.getOptions().toArray(new String[0]) : null,
-                            data.getCorrectAnswer()
+                            options,  // Optionen als String[]
+                            correctAnswer // Die richtige Antwort als String
                     ));
                 }
             }

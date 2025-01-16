@@ -1,19 +1,83 @@
 [
   {
     "type": "multiple_choice",
-    "question": "Was ist die Standard-Datenstruktur, die in Java verwendet wird, um eine geordnete Sammlung von Elementen zu speichern?",
-    "options": ["List", "Set", "Queue", "Map"],
+    "question": "Welche Programmiersprache wird in der Regel für die Entwicklung von Android-Apps verwendet?",
+    "options": ["Java", "C#", "Python", "Ruby"],
     "correctAnswer": "1"
   },
   {
     "type": "true_false",
-    "question": "Java ist eine funktionale Programmiersprache.",
+    "question": "Das Model-View-Controller (MVC) Pattern wird in der Softwareentwicklung verwendet, um die Struktur der Anwendung zu definieren.",
+    "correctAnswer": "true"
+  },
+  {
+    "type": "multiple_choice",
+    "question": "Was ist ein ORM (Object-Relational Mapping)?",
+    "options": [
+      "Ein Framework zur Darstellung von Objekten in einer Datenbank",
+      "Eine Datenbank-Technologie zur Speicherung von großen Datenmengen",
+      "Ein Designmuster für die Verwaltung von Benutzern",
+      "Eine Programmiersprache"
+    ],
+    "correctAnswer": "0"
+  },
+  {
+    "type": "true_false",
+    "question": "Die Programmiersprache JavaScript wird hauptsächlich für die Backend-Entwicklung verwendet.",
     "correctAnswer": "false"
   },
   {
     "type": "multiple_choice",
-    "question": "Welches Protokoll wird für den Versand von E-Mails verwendet?",
-    "options": ["SMTP", "HTTP", "FTP", "SNMP"],
+    "question": "Welches der folgenden Datenbanken ist ein relationales Datenbankmanagementsystem (RDBMS)?",
+    "options": ["MongoDB", "MySQL", "Cassandra", "Firebase"],
+    "correctAnswer": "1"
+  },
+  {
+    "type": "true_false",
+    "question": "In einer RESTful API sind HTTP-Methoden wie GET, POST, PUT und DELETE entscheidend für die Interaktion mit Ressourcen.",
+    "correctAnswer": "true"
+  },
+  {
+    "type": "multiple_choice",
+    "question": "Was bedeutet das Prinzip der Kapselung in der objektorientierten Programmierung?",
+    "options": [
+      "Die Möglichkeit, Code in separaten Modulen zu organisieren",
+      "Das Verbergen der Implementierung von einer Klasse vor anderen Klassen",
+      "Das Erstellen von Schnittstellen für den Benutzer",
+      "Die Verwendung von Vererbung, um Code wiederzuverwenden"
+    ],
+    "correctAnswer": "1"
+  },
+  {
+    "type": "true_false",
+    "question": "Ein UML-Diagramm (Unified Modeling Language) ist eine grafische Darstellung von Systemen und deren Interaktionen.",
+    "correctAnswer": "true"
+  },
+  {
+    "type": "multiple_choice",
+    "question": "Welche der folgenden Aussagen ist zutreffend in Bezug auf die Verwendung von Versionierungssystemen wie Git?",
+    "options": [
+      "Git wird verwendet, um Anwendungen zu kompilieren",
+      "Git speichert nur die endgültige Version eines Projekts",
+      "Git ermöglicht es mehreren Entwicklern, an einem Projekt zusammenzuarbeiten",
+      "Git ersetzt die Notwendigkeit für Testautomatisierung"
+    ],
+    "correctAnswer": "2"
+  },
+  {
+    "type": "true_false",
+    "question": "In der agilen Softwareentwicklung werden Anforderungen zu Beginn des Projekts festgelegt und ändern sich dann nicht mehr.",
+    "correctAnswer": "false"
+  },
+  {
+    "type": "multiple_choice",
+    "question": "Welche der folgenden Aussagen beschreibt am besten das Konzept von 'Refactoring' in der Softwareentwicklung?",
+    "options": [
+      "Die Erstellung von neuen Features",
+      "Das Überarbeiten und Verbessern von bestehendem Code, ohne das Verhalten zu ändern",
+      "Das Schreiben von Tests für den Code",
+      "Das Dokumentieren von Codeänderungen"
+    ],
     "correctAnswer": "1"
   }
 ]
