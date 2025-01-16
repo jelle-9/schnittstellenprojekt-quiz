@@ -1,0 +1,19 @@
+[
+  {
+    "type": "multiple_choice",
+    "question": "Was ist die Standard-Datenstruktur, die in Java verwendet wird, um eine geordnete Sammlung von Elementen zu speichern?",
+    "options": ["List", "Set", "Queue", "Map"],
+    "correctAnswer": "1"
+  },
+  {
+    "type": "true_false",
+    "question": "Java ist eine funktionale Programmiersprache.",
+    "correctAnswer": "false"
+  },
+  {
+    "type": "multiple_choice",
+    "question": "Welches Protokoll wird für den Versand von E-Mails verwendet?",
+    "options": ["SMTP", "HTTP", "FTP", "SNMP"],
+    "correctAnswer": "1"
+  }
+]

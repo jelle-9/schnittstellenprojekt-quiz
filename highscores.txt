@@ -1,0 +1,7 @@
+Json:3
+Max Mustermann:2
+Jamal:2
+Jamal:1
+Jamal:1
+test:1
+Max Mustermann:0
