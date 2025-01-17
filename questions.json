@@ -1,11 +1,5 @@
 [
   {
-    "type": "multiple_choice",
-    "question": "Welche Programmiersprache wird in der Regel für die Entwicklung von Android-Apps verwendet?",
-    "options": ["Java", "C#", "Python", "Ruby"],
-    "correctAnswer": "1"
-  },
-  {
     "type": "true_false",
     "question": "Das Model-View-Controller (MVC) Pattern wird in der Softwareentwicklung verwendet, um die Struktur der Anwendung zu definieren.",
     "correctAnswer": "true"
