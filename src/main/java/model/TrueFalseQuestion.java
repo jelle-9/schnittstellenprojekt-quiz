@@ -13,7 +13,7 @@ public class TrueFalseQuestion extends Question {
         if (answer == null) return false;
         answer = answer.trim().toLowerCase();
 
-        if (answer.equals("true") || answer.equals("t") || answer.equals("whar") || answer.equals("1")){
+        if (answer.equals("true") || answer.equals("t") || answer.equals("whar") || answer.equals("1") || answer.equals("w")){
             return correctAnswer;
         }
 
