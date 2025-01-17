@@ -1,10 +1,11 @@
 # schnittstellenprojekt-quiz v0.3.2
-Ein kleines Quiz Projekt in Java
+Ein kleines Quiz Projekt in Java - von Jamal
 
 ## Features
 * Quizfragen hinzufügen
   * Multiple-Choice
   * T/F
+* Hinzufügen von Fragen via JSON-Datei
 * User-Input (konsole)
 * Punktestand (konsole)
 * High-Score System
